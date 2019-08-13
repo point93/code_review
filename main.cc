@@ -2,6 +2,9 @@
 #include <cstdlib>
 #include "priority_queue.h"
 
+#define MIN -500
+#define MAX 2000
+
 using namespace std;
 
 template <typename T>
@@ -30,9 +33,9 @@ int main(int argc, char* argv[]){
 	pushQueue(&priQueue,598);
 	pushQueue(&priQueue,302);
 
-	if( argc > 1 ){
+	if(argc > 1){
 		customNumber = atoi(argv[1]);
-		if( customNumber > -500 && customNumber < 2000 ){
+		if(customNumber > MIN && customNumber < MAX){
 			pushQueue(&priQueue,customNumber);
 		}
 		else{
