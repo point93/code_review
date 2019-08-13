@@ -42,10 +42,10 @@ TEST(PriorityQueueTest,Trivial){
 	
 	// Fail Example - If you activate this code, Test will be fail
 
-	expTarget.pop();
+	//xpTarget.pop();
 	
-	EXPECT_TRUE(expTarget.empty()); // non-Fatal Failure - not terminate this test case when result of empty method is false.
-	ASSERT_EQ(expTarget.size(),0);
+	//EXPECT_TRUE(expTarget.empty()); // non-Fatal Failure - not terminate this test case when result of empty method is false.
+	//ASSERT_EQ(expTarget.size(),0);
 	
 }
 
